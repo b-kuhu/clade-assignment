@@ -8,16 +8,19 @@ import { FiMessageSquare } from "react-icons/fi";
 import { IoEyeOutline } from "react-icons/io5";
 
 import Avatar from '../assets/Avatar.png'
+import icon1 from '../assets/icon1.png';
+import icon2 from '../assets/icon2.png';
+import icon3 from '../assets/icon3.png';
 
 const JobDetails = () => {
   return (
-    <main classname="job_details">
-      <section className="options">
-        <p>Job Preview </p>
-        <p>Applicants</p>
-        <p>Match</p>
-        <p>Messages</p>
-      </section>
+    <main className="job_details">
+      <ul className="options">
+        <li>Job Preview</li>
+        <li>Applicants</li>
+        <li>Match</li>
+        <li>Messages</li>
+      </ul>
       <div className="wrapper_container">
         <section>
           <div className="job_designation">
@@ -25,7 +28,7 @@ const JobDetails = () => {
             <p className="job_date_posted">Posted 2 days ago</p>
             <button className="job_status">&#x2022; Open</button>
           </div>
-          <section className="job_location_and_salary">
+          <div className="job_location_and_salary">
             <div className="job_location">
               <CiLocationOn className="icon" />
               <p>Delaware, USA</p>
@@ -34,6 +37,26 @@ const JobDetails = () => {
               <FaCoins className="icon" />
               <p>$300k-$400k</p>
             </div>
+          </div>
+          <section className="job_requirements">
+            <ul className="skills_required">
+              <li>Skills Required</li>
+              <li><button><img src={icon1} alt="figma"/>Figma</button></li>
+              <li><button><img src={icon2} alt="adobe_illustration" />Adobe Illustrator</button></li>
+              <li><button><img src={icon3} alt="adobeXD" />Adobe XD</button></li>
+            </ul>
+            <ul className="prefered_language">
+              <li>Preferred Language</li>
+              <li>English</li>
+            </ul>
+            <ul className="job_type">
+              <li>Type</li>
+              <li>Full time</li>
+            </ul>
+            <ul className="years_of_experience">
+              <li>Years of Experience</li>
+              <li>3+ Years of Experience</li>
+            </ul>
           </section>
           <section className="job_overview">
             <p>About the job</p>
