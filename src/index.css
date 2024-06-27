@@ -1,24 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
 /* styling for heading */
 .heading{
   display: flex;
   gap: 1rem;
   justify-content: space-between;
   align-items: center;
-  padding: 0 1rem ;
+  padding: 1rem 2rem 0rem 2rem ;
 }
 .btn_logo{
   background-color: #E7E7E7;
   color:#DC4A2D;
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 800;
-  padding: 1.25rem;
+  padding: 0.75rem 1.25rem;
   border: none;
 }
 .btn_jobs{
-  padding: 0.75rem;
-  font-size: 1.25rem;
+  padding: 0.5rem 0.75rem;
+  font-size: 1.125rem;
   font-weight: 400;
   color:#FFFFFF;
   background-color: #DC4A2D;
@@ -37,7 +41,7 @@
 .nav_wrapper_options{
   color:#B0B0B0;
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
   margin: 1rem;
   padding: 0.5rem;
   border: 0.5px solid #D1D1D1;
@@ -49,35 +53,40 @@
   padding: 0.5rem;
   background-color: #ffffff;
   color:#B0B0B0;
-  font-size:1.25rem;
+  font-size:1rem;
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
-
 .atlassian_icon{
   background-color: #003788;
   color: white;
-  padding: 0.75rem;
+  padding: 0.5rem;
   border-radius: 50%;
 }
 /* job post styling */
-.job_details {
-  font-family: "Poppins", sans-serif;
-}
 .options {
+  padding: 1rem 5rem;
   display: flex;
-  gap: 1rem;
-  font-size: 1.5rem;
+  gap: 4rem;
+}
+.options li{
+  list-style-type: none;
+  font-size: 1rem;
+  color: #888888;
+  position: relative; 
+}
+.options li:first-child{
+  color:#DC4A2D;
 }
 .job_designation {
-  font-family: "Poppins", sans-serif;
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem;
   align-items: center;
+  padding:1.5rem 5rem 0 5rem;
 }
 .job_role {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-weight: 700;
 }
 .job_date_posted {
@@ -94,7 +103,8 @@
 }
 .job_location_and_salary {
   display: flex;
-  gap: 10rem;
+  gap: 5rem;
+  padding: 1rem 5rem;
 }
 .job_location,
 .job_salary {
@@ -103,27 +113,62 @@
   gap: 1rem;
   color: #5d5d5d;
   font-weight: 400;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
+}
+.job_requirements{
+  display: flex;
+  gap: 4rem;
+  padding: 1rem 2rem 1rem 5rem;
+  line-height: 2rem;
+}
+.job_requirements li{
+  list-style-type: none;
+}
+.job_requirements li:first-child{
+  font-size: 0.875rem;
+  color: #6E6D6D;
+}
+.skills_required li{
+  font-size: 0.75rem;
+}
+.skills_required li button{
+  padding: 0.25rem;
+  margin-top: 0.25rem;
+  border: 1.2px solid #D0D5DD;
+  background: #FFFFFF;
+  border-radius: 0.45rem;
+  box-shadow: 0px 4px 4px 0px #00000014;
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
 }
 .wrapper_container {
   display: grid;
-  grid-template-columns: 70% 30%;
+  grid-template-columns: 75% 25%;
 }
 .wrapper_container section{
   border-top:  1px solid #e7e7e7 ;
-  border-right: 1px solid #e7e7e7;
+  border-right: 1px solid #e7e7e7 ;
 }
 .icon {
   height: 1.5rem;
   width: 1.5rem;
 }
 .job_overview {
-  font-family: "Poppins", sans-serif;
-  line-height: 1.25rem;
   color: #3d3d3d;
+  padding: 1.5rem 5rem;
+  line-height: 1.75rem;
 }
-.flex_container {
-  font-family: "Poppins", sans-serif;
+.job_overview p:first-child{
+  color: #6E6D6D;
+  font-size: 0.9rem;
+}
+.job_overview ol,.job_overview ul {
+  padding-left: 1rem;
+  width: 65%;
+}
+.flex_container{
+  padding: 3rem 5rem;
 }
 .flex_container li{
   list-style-type: none;
@@ -154,6 +199,7 @@
   box-shadow: 0px 4px 4px 0px #00000040;
 }
 .flex_wrapper {
+  margin-top:1rem ;
   display: flex;
   gap: 10rem;
   color: #3d3d3d;
@@ -167,19 +213,17 @@
 aside {
   font-family: "Poppins", sans-serif;
   background-color: #FCFCFC;
-  padding: 1rem;
+  padding: 2rem 0.5rem 1rem 2rem;
   border-top:  1px solid #e7e7e7 ;
   border-right: 1px solid #e7e7e7;
   border-radius: 0.5rem;
 }
 .btns_wrapper {
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
+  display: flex;
   gap: 1rem;
-  padding: 1rem;
 }
 .btn_delete {
-  padding: 0.75rem 1rem;
+  padding: 0.5rem 1.25rem;
   color: #dc4a2d;
   background-color: #fef4f2;
   border: 1px solid #dc4a2d;
@@ -188,7 +232,7 @@ aside {
   font-weight: 400;
 }
 .btn_edit {
-  padding: 0.75rem 1rem;
+  padding: 0.5rem 1.25rem;
   color: #ffffff;
   background-color: #dc4a2d;
   border: 1px solid #dc4a2d;
@@ -196,8 +240,11 @@ aside {
   font-size: 1rem;
   font-weight: 400;
 }
+.job_post_details{
+  margin: 3rem 0 ;
+}
 .job_post_details li {
-  margin: 0.75rem;
+  margin: 1.25rem 0.5rem;
   display: flex;
   justify-content: space-between;
 }
@@ -209,7 +256,7 @@ aside {
   font-size: 1rem;
 }
 .job_post_details li > p:last-child{
-  font-size: 1.25rem;
+  font-size: 1rem;
   color: #3D3D3D;
 }
 hr {
@@ -218,7 +265,7 @@ hr {
   height: 1px;
 }
 .job_post_company_quote{
-  margin-top: 1.5rem;
+  margin-top: 2rem;
   padding: 1rem 2rem;
   background-color: #FFFFFF;
   border: 1px solid #E7E7E7;
@@ -226,15 +273,18 @@ hr {
   box-shadow: 0px 4px 4px 0px #00000040;
 }
 .job_post_company_quote p{
-  font-size: 1.25rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 0.5rem 0;
 }
 .job_poster{
   display: flex;
   gap: 1rem;
   align-items: center;
+  padding: 1.5rem 0;
 }
-.job_poster ul{
-  padding: 0;
+.job_poster ul li{
+  list-style-type: none;
 }
 .job_poster_name{
   color:#000000;
