@@ -1,7 +1,8 @@
 import { PiSuitcase, PiHandCoins } from "react-icons/pi";
-import { FiMessageSquare } from "react-icons/fi";
+import { FiMessageSquare,FiBell } from "react-icons/fi";
 import { GoPeople } from "react-icons/go";
-import { FaRegBell, FaAngleDown, FaAtlassian } from "react-icons/fa";
+import { FaAtlassian } from "react-icons/fa";
+import { IoChevronDownOutline } from "react-icons/io5";
 
 const Header = () => {
   return (
@@ -27,9 +28,9 @@ const Header = () => {
         </div>
       </div>
       <div className="nav_wrapper_two">
-        <FaRegBell className="icon" />
+        <FiBell className="icon" />
         <FaAtlassian className="atlassian_icon" />
-        <FaAngleDown className="icon" />
+        <IoChevronDownOutline className="icon" />
       </div>
     </div>
     <hr />
